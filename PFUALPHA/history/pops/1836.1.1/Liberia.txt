@@ -1,0 +1,338 @@
+#Liberia Region (880000) 
+#under the rule of Liberia in 1836
+#Monrovia (252000/63000 POPS) 
+1887 = {
+	aristocrats = {
+		culture = afro_american
+		religion = protestant
+		size = 500
+	}
+	
+	artisans = {
+		culture = afro_american
+		religion = animist
+		size = 1500
+	}
+	
+	bureaucrats = {
+		culture = afro_american
+		religion = protestant
+		size = 200
+	}
+
+	officers = {
+		culture = afro_american
+		religion = protestant
+		size = 10
+	}
+
+	clergymen = {
+		culture = afro_american
+		religion = protestant
+		size = 75
+	}
+
+	serfs = {
+		culture = afro_american
+		religion = protestant
+		size = 810
+	}
+
+	soldiers = {
+		culture = afro_american
+		religion = protestant
+		size = 1100
+
+	}
+
+	serfs = {
+		culture = kru
+		religion = protestant
+		size = 2775
+	}
+
+	aristocrats = {
+		culture = kru
+		religion = animist
+		size = 875
+	}
+
+	clergymen = {
+		culture = kru
+		religion = animist
+		size = 450
+	}
+
+	soldiers = {
+		culture = kru
+		religion = animist
+		size = 450
+
+	}
+
+	serfs = {
+		culture = kru
+		religion = animist
+		size = 40875
+	}
+
+	aristocrats = {
+		culture = mande
+		religion = sunni
+		size = 150
+	}
+
+	clergymen = {
+		culture = mande
+		religion = sunni
+		size = 75
+	}
+
+	soldiers = {
+		culture = mande
+		religion = sunni
+		size = 100
+
+	}
+
+	serfs = {
+		culture = mande
+		religion = sunni
+		size = 8225
+	}
+
+	aristocrats = {
+		culture = african_minor
+		religion = animist
+		size = 75
+	}
+
+	clergymen = {
+		culture = african_minor
+		religion = animist
+		size = 50
+	}
+
+	soldiers = {
+		culture = african_minor
+		religion = animist
+		size = 50
+
+	}
+
+	serfs = {
+		culture = african_minor
+		religion = animist
+		size = 3625
+	}
+}
+#Harper (204000/51000 POPS) 
+1888 = {
+	aristocrats = {
+		culture = afro_american
+		religion = protestant
+		size = 750
+	}
+
+	clergymen = {
+		culture = afro_american
+		religion = protestant
+		size = 375
+	}
+
+	soldiers = {
+		culture = kru
+		religion = animist
+		size = 375
+
+	}
+
+	serfs = {
+		culture = kru
+		religion = animist
+		size = 34600
+	}
+
+	aristocrats = {
+		culture = african_minor
+		religion = protestant
+		size = 250
+	}
+
+	clergymen = {
+		culture = african_minor
+		religion = animist
+		size = 125
+	}
+
+	soldiers = {
+		culture = african_minor
+		religion = animist
+		size = 125
+
+	}
+
+	serfs = {
+		culture = african_minor
+		religion = animist
+		size = 11850
+	}
+}
+#uncolonized in 1836
+#Bopulu (124000/31000 POPS) 
+1889 = {
+	aristocrats = {
+		culture = mande
+		religion = sunni
+		size = 475
+	}
+
+	clergymen = {
+		culture = mande
+		religion = sunni
+		size = 250
+	}
+
+	soldiers = {
+		culture = mande
+		religion = sunni
+		size = 250
+
+	}
+
+	serfs = {
+		culture = mande
+		religion = sunni
+		size = 22775
+	}
+
+	aristocrats = {
+		culture = african_minor
+		religion = animist
+		size = 100
+	}
+
+	clergymen = {
+		culture = african_minor
+		religion = animist
+		size = 50
+	}
+
+	soldiers = {
+		culture = african_minor
+		religion = animist
+		size = 75
+
+	}
+
+	serfs = {
+		culture = african_minor
+		religion = animist
+		size = 5475
+	}
+}
+#Gbarnga (132000/33000 POPS) 
+1890 = {
+	aristocrats = {
+		culture = mande
+		religion = sunni
+		size = 200
+	}
+
+	clergymen = {
+		culture = mande
+		religion = sunni
+		size = 100
+	}
+
+	soldiers = {
+		culture = mande
+		religion = sunni
+		size = 125
+
+	}
+
+	serfs = {
+		culture = mande
+		religion = sunni
+		size = 10025
+	}
+
+	aristocrats = {
+		culture = african_minor
+		religion = animist
+		size = 425
+	}
+
+	clergymen = {
+		culture = african_minor
+		religion = animist
+		size = 225
+	}
+
+	soldiers = {
+		culture = african_minor
+		religion = animist
+		size = 225
+
+	}
+
+	serfs = {
+		culture = african_minor
+		religion = animist
+		size = 20025
+	}
+}
+#Zwedru (168000/42000 POPS) 
+1891 = {
+	aristocrats = {
+		culture = kru
+		religion = animist
+		size = 425
+	}
+
+	clergymen = {
+		culture = afro_american
+		religion = animist
+		size = 250
+	}
+
+	soldiers = {
+		culture = kru
+		religion = animist
+		size = 250
+
+	}
+
+	serfs = {
+		culture = kru
+		religion = animist
+		size = 20975
+	}
+
+	aristocrats = {
+		culture = afro_american
+		religion = animist
+		size = 350
+	}
+
+	clergymen = {
+		culture = afro_american
+		religion = animist
+		size = 200
+	}
+
+	soldiers = {
+		culture = afro_american
+		religion = animist
+		size = 200
+
+	}
+
+	serfs = {
+		culture = african_minor
+		religion = animist
+		size = 17300
+	}
+
+}

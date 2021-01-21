@@ -1,0 +1,46 @@
+####German Alliances
+alliance = {
+		first = PRU 
+		second = BAV 
+		start_date = 1835.1.1
+		end_date = 1867.1.1
+	}
+alliance = {
+		first = PRU 
+		second = WUR
+		start_date = 1835.1.1
+		end_date = 1867.1.1
+	}
+alliance = {
+		first = PRU 
+		second = BAD
+		start_date = 1835.1.1
+		end_date = 1867.1.1
+	}
+#British Alliances
+alliance = {
+		first = ENG 
+		second = POR
+		start_date = 1835.1.1
+		end_date = 1946.1.1
+	}
+alliance = {
+		first = ENG 
+		second = BEL
+		start_date = 1835.1.1
+		end_date = 1946.1.1
+	}
+#Russian Alliances
+alliance = {
+		first = RUS 
+		second = SER
+		start_date = 1835.1.1
+		end_date = 1946.1.1
+	}
+alliance = {
+		first = RUS 
+		second = ROM
+		start_date = 1835.1.1
+		end_date = 1946.1.1
+	}
+	

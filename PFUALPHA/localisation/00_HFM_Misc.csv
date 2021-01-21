@@ -1,0 +1,13 @@
+;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+rail_focus;Colonial Policy;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+colonial_immigration;Encourage Colonial Migration;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+encourage_agriculture;Encourage Agriculture;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+encourage_mining;Encourage Mining;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+encourage_business;Encourage Business;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+militancy_appeasement;Colonial Appeasement;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+consciousness_appeasement;Colonial Propaganda;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+native_enslavement;Native Enslavement;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+immigration_focus_desc;Migrants §Y$VAL$§W% more likely to choose this state. This focus makes immigrants more likely to settle in this state, it doesn't make more likely for them to choose our country.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+emigration_focus;Encourage Emigration;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+emigration_focus_desc;Pops will be §Y$VAL$§W% more likely to leave this region.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+polar_bears;Polar Bears;;Polarbären;;;;;;;;x

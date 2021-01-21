@@ -1,0 +1,42 @@
+AUS = {
+	value = 125
+}
+PRU = {
+	value = 100
+}
+
+leader = {
+	name = "Wilhelm I"
+	date = 1812.1.1
+	type = land
+	personality = able
+	background = aristocrat
+	prestige = 0.5
+}
+
+leader = {
+	name = "Prince Friedrich"
+	date = 1829.1.1
+	type = land
+	personality = mediocre
+	background = politician
+	prestige = 0.1
+}
+
+army = {
+	name = "1. Division"
+	location = 589
+	regiment = {
+		name = "7. Infanterie-Regiment"
+		type = infantry
+		home = 589
+	}
+	
+	regiment = {
+		name = "4. Infanterie-Regiment"
+		type = infantry
+		home = 589
+	}
+	
+}
+

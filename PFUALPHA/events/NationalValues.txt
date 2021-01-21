@@ -1,0 +1,525 @@
+#############################################
+#											#
+#			National Values Events			#
+#											#
+#############################################
+
+country_event = {
+	id = 18540
+	title = "EVTNAME18540" #Post-civilizing event to choose NV
+	desc = "EVTDESC18540"
+	major = yes
+	
+	trigger = {	exists = yes
+		nationalvalue = nv_progress
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "We shall embrace the ideal of Equality."
+		remove_country_modifier = national_confusion
+		prestige = 10
+		nationalvalue = nv_equality
+		remove_country_modifier = educational_reform
+		remove_country_modifier = military_reform
+		remove_country_modifier = western_influences
+		remove_country_modifier = uncivilized_isolationism
+		remove_country_modifier = trade_restrictions
+		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = extraterritoriality_granted
+		remove_country_modifier = nothing_stops_progress
+		remove_country_modifier = slow_down_progress
+		remove_country_modifier = shastar_vidya
+		remove_country_modifier = muhammad_alis_reforms
+		any_owned = {
+			remove_province_modifier = western_presence
+			remove_province_modifier = foreign_smugglers
+			remove_province_modifier = foreign_trading_post
+			remove_province_modifier = local_opium_habit
+			remove_province_modifier = european_military_mission
+			remove_province_modifier = legation_quarter
+			remove_province_modifier = kettler_denkmal
+		}
+		add_country_modifier = {
+			name = just_civilized
+			duration = 365
+		}
+		add_country_modifier = {
+			name = national_confusion
+			duration = 1825
+		}
+		any_pop = {
+			militancy = -5
+		}
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "We shall embrace the ideal of Liberty."
+		remove_country_modifier = national_confusion
+		prestige = 10
+		nationalvalue = nv_liberty
+		remove_country_modifier = educational_reform
+		remove_country_modifier = military_reform
+		remove_country_modifier = western_influences
+		remove_country_modifier = uncivilized_isolationism
+		remove_country_modifier = trade_restrictions
+		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = extraterritoriality_granted
+		remove_country_modifier = nothing_stops_progress
+		remove_country_modifier = slow_down_progress
+		remove_country_modifier = shastar_vidya
+		remove_country_modifier = muhammad_alis_reforms
+		any_owned = {
+			remove_province_modifier = western_presence
+			remove_province_modifier = foreign_smugglers
+			remove_province_modifier = foreign_trading_post
+			remove_province_modifier = local_opium_habit
+			remove_province_modifier = european_military_mission
+			remove_province_modifier = legation_quarter
+			remove_province_modifier = kettler_denkmal
+		}
+		add_country_modifier = {
+			name = just_civilized
+			duration = 365
+		}
+		add_country_modifier = {
+			name = national_confusion
+			duration = 1825
+		}
+		any_pop = {
+			militancy = -5
+		}
+		ai_chance = { factor = 75 }
+	}
+}
+
+country_event = {
+	id = 18541
+	title = "EVTNAME18540" #Post-civilizing event to choose NV
+	desc = "EVTDESC18540"
+	major = yes
+	
+	trigger = {	exists = yes
+		OR = {
+			nationalvalue = nv_loyalty
+			nationalvalue = nv_enlightenment
+		}
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "We shall embrace the ideal of Liberty."
+		remove_country_modifier = national_confusion
+		prestige = 10
+		nationalvalue = nv_liberty
+		remove_country_modifier = educational_reform
+		remove_country_modifier = military_reform
+		remove_country_modifier = western_influences
+		remove_country_modifier = uncivilized_isolationism
+		remove_country_modifier = trade_restrictions
+		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = extraterritoriality_granted
+		remove_country_modifier = nothing_stops_progress
+		remove_country_modifier = slow_down_progress
+		remove_country_modifier = shastar_vidya
+		remove_country_modifier = muhammad_alis_reforms
+		any_owned = {
+			remove_province_modifier = western_presence
+			remove_province_modifier = foreign_smugglers
+			remove_province_modifier = foreign_trading_post
+			remove_province_modifier = local_opium_habit
+			remove_province_modifier = european_military_mission
+			remove_province_modifier = legation_quarter
+			remove_province_modifier = kettler_denkmal
+		}
+		add_country_modifier = {
+			name = just_civilized
+			duration = 365
+		}
+		add_country_modifier = {
+			name = national_confusion
+			duration = 1825
+		}
+		any_pop = {
+			militancy = -5
+		}
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = "We shall embrace the ideal of Order."
+		remove_country_modifier = national_confusion
+		prestige = 10
+		nationalvalue = nv_order
+		remove_country_modifier = educational_reform
+		remove_country_modifier = military_reform
+		remove_country_modifier = western_influences
+		remove_country_modifier = uncivilized_isolationism
+		remove_country_modifier = trade_restrictions
+		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = extraterritoriality_granted
+		remove_country_modifier = nothing_stops_progress
+		remove_country_modifier = slow_down_progress
+		remove_country_modifier = shastar_vidya
+		remove_country_modifier = muhammad_alis_reforms
+		any_owned = {
+			remove_province_modifier = western_presence
+			remove_province_modifier = foreign_smugglers
+			remove_province_modifier = foreign_trading_post
+			remove_province_modifier = local_opium_habit
+			remove_province_modifier = european_military_mission
+			remove_province_modifier = legation_quarter
+			remove_province_modifier = kettler_denkmal
+		}
+		add_country_modifier = {
+			name = just_civilized
+			duration = 365
+		}
+		add_country_modifier = {
+			name = national_confusion
+			duration = 1825
+		}
+		any_pop = {
+			militancy = -5
+		}
+		ai_chance = { factor = 75 }
+	}
+}
+
+country_event = {
+	id = 18542
+	title = "EVTNAME18540" #Post-civilizing event to choose NV
+	desc = "EVTDESC18540"
+	major = yes
+	
+	trigger = {	exists = yes
+		OR = {
+			nationalvalue = nv_independence
+			nationalvalue = nv_tradition
+		}
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "We shall embrace the ideal of Order."
+		remove_country_modifier = national_confusion
+		prestige = 10
+		nationalvalue = nv_order
+		remove_country_modifier = educational_reform
+		remove_country_modifier = military_reform
+		remove_country_modifier = western_influences
+		remove_country_modifier = uncivilized_isolationism
+		remove_country_modifier = trade_restrictions
+		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = extraterritoriality_granted
+		remove_country_modifier = nothing_stops_progress
+		remove_country_modifier = slow_down_progress
+		remove_country_modifier = shastar_vidya
+		remove_country_modifier = muhammad_alis_reforms
+		any_owned = {
+			remove_province_modifier = western_presence
+			remove_province_modifier = foreign_smugglers
+			remove_province_modifier = foreign_trading_post
+			remove_province_modifier = local_opium_habit
+			remove_province_modifier = european_military_mission
+			remove_province_modifier = legation_quarter
+			remove_province_modifier = kettler_denkmal
+		}
+		add_country_modifier = {
+			name = just_civilized
+			duration = 365
+		}
+		add_country_modifier = {
+			name = national_confusion
+			duration = 1825
+		}
+		any_pop = {
+			militancy = -5
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_culture_group = far_east_asian
+			}
+			modifier = {
+				factor = 0.5
+				is_culture_group = east_asian
+			}
+		}
+	}
+	
+	option = {
+		name = "We shall embrace the ideal of Might."
+		remove_country_modifier = national_confusion
+		prestige = 10
+		nationalvalue = nv_might
+		remove_country_modifier = educational_reform
+		remove_country_modifier = military_reform
+		remove_country_modifier = western_influences
+		remove_country_modifier = uncivilized_isolationism
+		remove_country_modifier = trade_restrictions
+		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = extraterritoriality_granted
+		remove_country_modifier = nothing_stops_progress
+		remove_country_modifier = slow_down_progress
+		remove_country_modifier = shastar_vidya
+		remove_country_modifier = muhammad_alis_reforms
+		any_owned = {
+			remove_province_modifier = western_presence
+			remove_province_modifier = foreign_smugglers
+			remove_province_modifier = foreign_trading_post
+			remove_province_modifier = local_opium_habit
+			remove_province_modifier = european_military_mission
+			remove_province_modifier = legation_quarter
+			remove_province_modifier = kettler_denkmal
+		}
+		add_country_modifier = {
+			name = just_civilized
+			duration = 365
+		}
+		add_country_modifier = {
+			name = national_confusion
+			duration = 1825
+		}
+		any_pop = {
+			militancy = -5
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				is_culture_group = east_asian
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 18550
+	title = "EVTNAME18550" #Rejecting Westernization
+	desc = "EVTDESC18550"
+	picture = "india"
+	
+	trigger = {	exists = yes
+		war = no
+		civilized = no
+		nationalvalue = nv_enlightenment
+		diplomatic_reform = interactive
+		NOT = {
+			has_country_flag = can_switch_to_tradition
+			has_country_flag = can_switch_to_enlightenment
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.05
+			has_country_flag = angry_rioters_victorious
+		}
+		modifier = {
+			factor = 0.8
+			num_of_revolts = 1
+		}
+		modifier = {
+			factor = 0.8
+			num_of_revolts = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 6
+		}
+	}
+	
+	option = {
+		name = "We shall embrace our traditions once again."
+		set_country_flag = can_switch_to_tradition
+		clr_country_flag = angry_rioters_victorious
+		random_owned = {
+			limit = {
+				owner = { has_country_modifier = western_influences }
+			}
+			owner = {
+				remove_country_modifier = western_influences
+				add_country_modifier = {
+					name = uncivilized_isolationism
+					duration = -1
+				}
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 4
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "Westernization is the correct path."
+		set_country_flag = can_switch_to_enlightenment
+		clr_country_flag = angry_rioters_victorious
+		random_owned = {
+			limit = {
+				owner = { has_country_modifier = uncivilized_isolationism }
+			}
+			owner = {
+				remove_country_modifier = uncivilized_isolationism
+				add_country_modifier = {
+					name = western_influences
+					duration = -1
+				}
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 4
+			}
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					is_culture_group = east_asian
+					is_culture_group = far_east_asian
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 18551
+	title = "EVTNAME18551" #Embracing Westernization
+	desc = "EVTDESC18551"
+	picture = "india"
+	
+	trigger = {	exists = yes
+		war = no
+		civilized = no
+		nationalvalue = nv_tradition
+		diplomatic_reform = interactive
+		NOT = {
+			has_country_flag = can_switch_to_tradition
+			has_country_flag = can_switch_to_enlightenment
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.8
+			num_of_revolts = 1
+		}
+		modifier = {
+			factor = 0.8
+			num_of_revolts = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 6
+		}
+	}
+	
+	option = {
+		name = "The traditional $COUNTRY_ADJ$ path is best."
+		set_country_flag = can_switch_to_tradition
+		random_owned = {
+			limit = {
+				owner = { has_country_modifier = western_influences }
+			}
+			owner = {
+				remove_country_modifier = western_influences
+				add_country_modifier = {
+					name = uncivilized_isolationism
+					duration = -1
+				}
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 4
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "We shall embrace enlightenment."
+		set_country_flag = can_switch_to_enlightenment
+		random_owned = {
+			limit = {
+				owner = { has_country_modifier = uncivilized_isolationism }
+			}
+			owner = {
+				remove_country_modifier = uncivilized_isolationism
+				add_country_modifier = {
+					name = western_influences
+					duration = -1
+				}
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 4
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					is_culture_group = east_asian
+					is_culture_group = far_east_asian
+				}
+			}
+		}
+	}
+}

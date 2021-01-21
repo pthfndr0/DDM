@@ -1,0 +1,134 @@
+#Taiwan Region (2980000) 
+#under the rule of China in 1836  
+#Taipei (1452000/363000 POPS) #now part of Taiwan   
+1485 = {
+	
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 10000
+	}
+	
+	aristocrats = {
+		culture = beifaren
+		religion = mahayana
+		size = 1500
+	}
+
+	bureaucrats = {
+		culture = beifaren
+		religion = mahayana
+		size = 400
+	}
+
+	officers = {
+		culture = beifaren
+		religion = mahayana
+		size = 725
+	}
+
+	clergymen = {
+		culture = beifaren
+		religion = mahayana
+		size = 1225
+	}
+
+	soldiers = {
+		culture = beifaren
+		religion = mahayana
+		size = 1250
+
+	}
+
+	serfs = {
+		culture = beifaren
+		religion = mahayana
+		size = 110625
+	}
+
+	aristocrats = {
+		culture = beifaren
+		religion = mahayana
+		size = 3000
+	}
+
+	clergymen = {
+		culture = beifaren
+		religion = mahayana
+		size = 2400
+	}
+
+	soldiers = {
+		culture = beifaren
+		religion = mahayana
+		size = 2400
+
+	}
+
+	serfs = {
+		culture = beifaren
+		religion = mahayana
+		size = 222200
+	}
+
+}
+#Tainan (1528000/382000 POPS) #now part of Taiwan  
+2562 = {
+	
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 10000
+	}
+	
+	aristocrats = {
+		culture = beifaren
+		religion = mahayana
+		size = 1525
+	}
+
+	clergymen = {
+		culture = beifaren
+		religion = mahayana
+		size = 1325
+	}
+
+	soldiers = {
+		culture = beifaren
+		religion = mahayana
+		size = 1325
+
+	}
+
+	serfs = {
+		culture = beifaren
+		religion = mahayana
+		size = 121225
+	}
+
+	aristocrats = {
+		culture = beifaren
+		religion = mahayana
+		size = 3500
+	}
+
+	clergymen = {
+		culture = beifaren
+		religion = mahayana
+		size = 2500
+	}
+
+	soldiers = {
+		culture = beifaren
+		religion = mahayana
+		size = 2500
+
+	}
+
+	serfs = {
+		culture = beifaren
+		religion = mahayana
+		size = 229000
+	}
+
+}

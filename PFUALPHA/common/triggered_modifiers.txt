@@ -1,0 +1,295 @@
+trinket_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = trinket_health_care
+		administration_spending = 0.2
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+low_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = low_health_care
+		OR = {
+			AND = {
+				ai = yes
+				administration_spending = 0.15
+			}
+			AND = {
+				ai = no
+				administration_spending = 0.4
+			}
+		}
+	}
+	global_population_growth = 0.002
+	icon = 19
+}
+
+acceptable_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = acceptable_health_care
+		OR = {
+			AND = {
+				ai = yes
+				administration_spending = 0.2
+			}
+			AND = {
+				ai = no
+				administration_spending = 0.5
+			}
+		}
+	}
+	global_population_growth = 0.003
+	icon = 19
+}
+
+good_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = good_health_care
+		OR = {
+			AND = {
+				ai = yes
+				administration_spending = 0.2
+			}
+			AND = {
+				ai = no
+				administration_spending = 0.75
+			}
+		}
+	}
+	global_population_growth = 0.004
+	icon = 19
+}
+
+education_fully_funded = {
+	trigger = {
+		exists = yes
+		education = public
+		OR = {
+			AND = {
+				ai = yes
+				education_spending = 0.5
+			}
+			AND = {
+				ai = no
+				education_spending = 0.99
+			}
+		}
+	}
+	education_efficiency_modifier = 0.1
+	icon = 19
+}
+
+help_ai_all = {
+	trigger = {
+		civilized = yes
+		ai = yes
+	}
+	icon = 10
+	tax_efficiency = 0.25
+	education_efficiency_modifier = 0.20
+	land_organisation = 0.25
+	org_regain = 0.25
+	land_unit_start_experience = 10
+}
+
+grand_navy = {
+	trigger = {
+	is_greater_power = yes
+	total_amount_of_ships = 100
+	}
+	prestige = 0.05
+	import_cost = -0.03
+	tariff_efficiency_modifier = 0.03
+	icon = 9
+}
+
+big_navy = {
+	trigger = {
+	is_greater_power = yes
+	not = { total_amount_of_ships = 100 }
+	total_amount_of_ships = 50
+	}
+	prestige = 0.03
+	import_cost = -0.02
+	tariff_efficiency_modifier = 0.02
+	icon = 9
+}
+
+respectable_navy = {
+	trigger = {
+	is_greater_power = yes
+	not = { total_amount_of_ships = 50 }
+	total_amount_of_ships = 10
+	}
+	prestige = 0.02
+	import_cost = -0.01
+	tariff_efficiency_modifier = 0.01
+	icon = 9
+}
+
+small_navy = {
+	trigger = {
+		is_greater_power = yes
+		not = { total_amount_of_ships = 10 }
+		num_of_ports = 1
+		year = 1837
+	}
+	prestige = -0.05
+	tariff_efficiency_modifier = -0.02
+	import_cost = 0.02
+	icon = 9
+}
+
+
+growing_industry = {
+	trigger = {
+    industrial_score = 500
+	}
+	prestige = 0.01
+	factory_throughput = -0.05
+	tariff_efficiency_modifier = -0.05
+	tax_efficiency = -0.025
+	icon = 9
+}
+
+large_industry = {
+	trigger = {
+    industrial_score = 1000
+	}
+	prestige = 0.02
+	factory_throughput = -0.05
+	tariff_efficiency_modifier = -0.1
+	tax_efficiency = -0.05
+	icon = 9
+}
+
+very_large_industry = {
+	trigger = {
+    industrial_score = 1500
+	}
+	prestige = 0.04
+	factory_throughput = -0.1
+	tariff_efficiency_modifier = -0.15
+	tax_efficiency = -0.1
+	icon = 9
+}
+
+huge_industry = {
+	trigger = {
+    industrial_score = 2000
+	}
+	prestige = 0.05
+	factory_throughput = -0.15
+	tariff_efficiency_modifier = -0.2
+	tax_efficiency = -0.15
+	icon = 9
+}
+
+tiny_nation = {
+	trigger = {
+		total_pops = 125000 #125 thousand POPs/500 thousand population
+		NOT = {
+			OR = {
+				year = 1900 
+				total_pops = 1250000 #1.25 million POPs/5 Million population
+			}
+
+		}
+	}
+	global_population_growth = 0.001
+	mobilisation_economy_impact = -0.50
+	supply_consumption = -0.50
+	mobilisation_size = 0.15
+	research_points_modifier = 0.15 #15% increase
+	tax_efficiency = 0.25 #25% boost
+	icon = 6
+}
+
+small_nation = {
+	trigger = {
+		total_pops = 1250000 #1.25 million POPs/5 Million population
+		NOT = { total_pops = 3750000 }
+	}
+	mobilisation_economy_impact = -0.25
+	supply_consumption = -0.25
+	mobilisation_size = 0.08
+	research_points_modifier = 0.1 #10% increase
+	tax_efficiency = 0.20 #20% boost
+	icon = 6
+}
+
+medium_nation  = {
+	trigger = {
+		total_pops = 3750000 #3.75 million POPs/15 Million population
+		NOT = { total_pops = 7500000 }
+	}
+	mobilisation_economy_impact = -0.10
+	supply_consumption = -0.10
+	mobilisation_size = 0.02
+	tax_efficiency = 0.10 #10% boost
+	icon = 6
+}
+
+large_nation  = {
+	trigger = {
+		ai = no
+		year = 1870
+		total_pops = 12500000 #12.5 million POPs/50 million population
+		NOT = { total_pops = 21250000 } #21.25 million POPs/85 million population
+	}
+	max_tariff = -0.10 
+	mobilisation_economy_impact = 0.2
+	icon = 6
+}
+
+empire = {
+	trigger = {
+		ai = no
+		year = 1870
+		total_pops = 21250000 #21.25 million POPs/85 million population
+		NOT = { total_pops = 37500000 } #37.5 million POPs/150 million population
+
+	}
+	max_tariff = -0.3 
+	mobilisation_economy_impact = 0.4
+	icon = 6
+}
+
+medium_empire  = {
+	trigger = {
+		ai = no
+		year = 1870
+		total_pops = 37500000 #37.5 million POPs/150 million population
+		NOT = { total_pops = 62500000 } #62.5 million POPs/250 million population
+
+	}
+	max_tariff = -0.4 
+	mobilisation_economy_impact = 0.6
+	icon = 6
+}
+
+large_empire  = {
+	trigger = {
+		ai = no
+		year = 1870
+		total_pops = 62500000 #62.5 million POPs/250 million population
+
+	}
+	max_tariff = -0.5 
+	mobilisation_economy_impact = 0.8
+	icon = 6
+}
+
+economic_boom = {
+	trigger = {
+		NOT = { year = 1870 }
+	}
+	tax_efficiency = 0.10 
+	tariff_efficiency_modifier = 0.05
+	icon = 6
+}

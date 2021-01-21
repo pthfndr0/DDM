@@ -1,0 +1,114 @@
+SPA = {
+	value = 100
+}
+POR = {
+	value = 100
+}
+USA = {
+	value = 100
+}
+
+leader = {
+	name = "Pierre Labatut"
+	date = 1824.1.1
+	type = land
+	personality = arrogant
+	background = renowned_adventurer
+	prestige = 0.1
+}
+
+leader = {
+	name = "Sebastião Pinto"
+	date = 1825.1.1
+	type = land
+	personality = perverse
+	background = unfit
+	prestige = 0.0
+}
+
+leader = {
+	name = "Barão de Tramandaí"
+	date = 1830.1.1
+	type = land
+	personality = cautious
+	background = politician
+	prestige = 0.0
+}
+
+leader = {
+	name = "John Grenfell"
+	date = 1822.1.1
+	type = sea
+	personality = brash
+	background = expert_raider
+	prestige = 0.1
+}
+
+leader = {
+	name = "Luís Alves de Lima e Silva"
+	picture = southamerican_general_6
+	date = 1836.1.1
+	type = land
+	personality = fearsome
+	background = war_college
+}
+
+army = {
+	name = "I Corpo do exército"
+	location = 2447
+	regiment = {
+		name = "1. Brigada de Infantaria"
+		type = infantry
+		home = 2447
+	}
+
+	regiment = {
+		name = "2. Brigada de Infantaria"
+		type = infantry
+		home = 2447
+	}
+
+	regiment = {
+		name = "3. Brigada de Infantaria"
+		type = infantry
+		home = 2447
+	}
+	
+	regiment = {
+		name = "4. Brigada de Infantaria"
+		type = infantry
+		home = 2457
+	}
+
+	regiment = {
+		name = "5. Brigada de Infantaria"
+		type = infantry
+		home = 2457
+	}
+
+	regiment = {
+		name = "6. Brigada de Infantaria"
+		type = infantry
+		home = 2424
+	}
+
+	regiment = {
+		name = "1. Brigada de Cavalaria"
+		type = cuirassier
+		home = 2439
+	}
+
+	regiment = {
+		name = "2. Brigada de Cavalaria"
+		type = cuirassier
+		home = 2450
+	}
+
+	regiment = {
+		name = "3. Brigada de Cavalaria"
+		type = hussar
+		home = 2428
+	}
+
+}
+

@@ -1,0 +1,241 @@
+
+BRU = { value = 100 }
+
+leader = {
+	name = "Sakuma Shozan"
+	date = 1836.1.1
+	type = land
+	personality = clever
+	background = politician
+	prestige = 0.1
+}
+
+leader = {
+	name = "Takashima Shuhan"
+	date = 1836.1.1
+	type = land
+	personality = defiant
+	background = school_of_the_bayonet
+	prestige = 0.1
+}
+
+leader = {
+	name = "Watanabe Kazan"
+	date = 1836.1.1
+	type = land
+	personality = strange
+	background = aristocrat
+	prestige = 0.1
+}
+
+leader = {
+	name = "Takano Choei"
+	date = 1836.1.1
+	type = land
+	personality = bold
+	background = aristocrat
+	prestige = 0.1
+}
+
+leader = {
+	name = "Prince Fushimi Kuniie"
+	date = 1836.1.1
+	type = land
+	personality = efficient
+	background = renowned_adventurer
+	prestige = 0.1
+}
+
+leader = {
+	name = "Prince Fushimi Sadanori"
+	date = 1836.1.1
+	type = land
+	personality = fearsome
+	background = rising_star
+}
+
+army = {
+	name = "Imperial Guard"
+	location = 1657
+	regiment = {
+		name= "1.Guard"
+		type = guard
+		home = 1657
+	}
+	regiment = {
+		name= "2.Guard"
+		type = guard
+		home = 1657
+	}
+	regiment = {
+		name= "3.Guard"
+		type = guard
+		home = 1657
+	}
+	regiment = {
+		name= "4.Guard"
+		type = guard
+		home = 1662
+	}
+	regiment = {
+		name= "5.Guard"
+		type = guard
+		home = 1665
+	}
+	regiment = {
+		name= "6.Guard"
+		type = guard
+		home = 1640
+	}
+	regiment = {
+		name= "7.Guard"
+		type = guard
+		home = 1646
+	}
+	regiment = {
+		name= "1.Imperial Cavalry"
+		type = hussar
+		home = 1649
+	}
+	regiment = {
+		name= "1.Imperial Artillery Regiment"
+		type = artillery
+		home = 1642
+	}
+	regiment = {
+		name= "2.Imperial Artillery Regiment"
+		type = artillery
+		home = 1642
+	}
+}
+
+army = {
+	name = "Imperial Reserve"
+	location = 1649
+	regiment = {
+		name= "8.Guard"
+		type = guard
+		home = 1646
+	}
+	regiment = {
+		name= "9.Guard"
+		type = guard
+		home = 1649
+	}
+	regiment = {
+		name= "10.Guard"
+		type = guard
+		home = 1646
+	}
+	regiment = {
+		name= "11.Guard"
+		type = guard
+		home = 1649
+	}
+	regiment = {
+		name= "12.Guard"
+		type = guard
+		home = 1646
+	}
+	regiment = {
+		name= "13.Guard"
+		type = guard
+		home = 1668
+	}
+	regiment = {
+		name= "14.Guard"
+		type = guard
+		home = 1646
+	}
+	regiment = {
+		name= "2.Imperial Cavalry"
+		type = hussar
+		home = 1662
+	}
+	regiment = {
+		name= "3.Imperial Artillery Regiment"
+		type = artillery
+		home = 1668
+	}
+	regiment = {
+		name= "4.Imperial Artillery Regiment"
+		type = artillery
+		home = 1662
+	}
+}
+
+navy = {
+    name = "Imperial Navy"
+	location = 1657
+	ship = {
+		name= "1st Hiroshima Clipper Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2nd Hiroshima Clipper Transport"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3rd Hiroshima Clipper Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "4th Hiroshima Clipper Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "5th Hiroshima Clipper Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "6th Hiroshima Clipper Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "7th Hiroshima Clipper Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "8th Hiroshima Clipper Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "9th Hiroshima Clipper Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "10th Hiroshima Clipper Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Takao"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Momo"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Aviso"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Datso"
+		type = frigate
+	}
+
+}
+

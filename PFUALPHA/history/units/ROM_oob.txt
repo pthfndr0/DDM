@@ -1,0 +1,34 @@
+army = {
+	name = "Armata Româna"
+	location = 664
+	regiment = {
+		name= "1st Infanterie Brigada"
+		type = infantry
+		home = 664
+	}
+
+	regiment = {
+		name= "2nd Infanterie Brigada"
+		type = infantry
+		home = 668
+	}
+
+	regiment = {
+		name= "3rd Infanterie Brigada"
+		type = infantry
+		home = 669
+	}
+	
+	regiment = {
+		name= "4th Infanterie Brigada"
+		type = infantry
+		home = 667
+	}
+	
+	regiment = {
+		name= "1st Artilerie Brigada"
+		type = artillery
+		home = 673
+	}
+}
+

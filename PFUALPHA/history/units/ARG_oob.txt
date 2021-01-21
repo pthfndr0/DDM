@@ -1,0 +1,83 @@
+ENG = {
+	value = 125
+}
+CHL = {
+	value = 75
+}
+
+leader = {
+	name = "de Urquiza"
+	date = 1837.1.1
+	type = land
+	personality = inefficient
+	background = powerful_friends
+	prestige = 0.2
+}
+
+leader = {
+	name = "Bartolomé Mitre"
+	date = 1853.1.1
+	type = land
+	personality = efficient
+	background = politician
+	prestige = 0.2
+}
+
+leader = {
+	name = "Julio Roca"
+	date = 1861.1.1 #1853
+	type = land
+	personality = brilliant
+	background = war_college
+	prestige = 0.2
+}
+
+army = {
+	name = "Ejército de Argentina"
+	location = 2348
+	regiment = {
+		name= "1. División de Infantería"
+		type = infantry
+		home = 2348
+	}
+
+	regiment = {
+		name= "2. División de Infantería"
+		type = infantry
+		home = 2348
+	}
+
+	regiment = {
+		name= "3. División de Infantería"
+		type = infantry
+		home = 2348
+	}
+	
+	regiment = {
+		name= "4. División de Infantería"
+		type = infantry
+		home = 2384
+	}
+
+	regiment = {
+		name= "5. División de Infantería"
+		type = infantry
+		home = 2384
+	}
+
+	regiment = {
+		name= "6. División de Infantería"
+		type = infantry
+		home = 2384
+	}
+
+	regiment = {
+		name= "1. División de Caballería"
+		type = cavalry
+		home = 2348
+	}
+
+
+}
+
+

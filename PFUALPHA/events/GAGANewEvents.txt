@@ -1,0 +1,1714 @@
+#########################################################
+#		NEW EVENTS FOR THE DIVIDE BY ZERO MODMOD		#
+#		by GAGA Extrem									#
+#########################################################
+
+# ID LIST
+# 555000 - Popular Figurehead (conservative)
+# 555001 - Popular Figurehead (liberal)
+# 555002 - Popular Figurehead (reactionary)
+# 555003 - Popular Figurehead (anarcho_liberal)
+# 555004 - Popular Figurehead (socialist)
+# 555005 - Popular Figurehead (communist)
+# 555006 - Popular Figurehead (fascist)
+# 555007 - Popular Figurehead (social_liberal)
+# 555008 - Popular Figurehead (separatist)
+
+# 555010 - Charismatic Leader (conservative)
+# 555011 - Charismatic Leader (liberal)
+# 555012 - Charismatic Leader (reactionary)
+# 555013 - Charismatic Leader (anarcho_liberal)
+# 555014 - Charismatic Leader (socialist)
+# 555015 - Charismatic Leader (communist)
+# 555016 - Charismatic Leader (fascist)
+# 555017 - Charismatic Leader (social_liberal)
+# 555018 - Charismatic Leader (separatist)
+
+# 555020 - End of Popular Figurehead - Natural Death
+# 555021 - End of Popular Figurehead - Assassination
+# 555022 - End of Popular Figurehead - Discredited
+# 555023 - End of Popular Figurehead - Retired
+# 555024 - End of Charismatic Leader - Natural Death
+# 555025 - End of Charismatic Leader - Assassination
+# 555026 - End of Charismatic Leader - Discredited
+# 555027 - End of Charismatic Leader - Retired
+
+# 555030 - Party Quarrel (conservative)
+# 555031 - Party Quarrel (liberal)
+# 555032 - Party Quarrel (reactionary)
+# 555033 - Party Quarrel (anarcho_liberal)
+# 555034 - Party Quarrel (socialist)
+# 555035 - Party Quarrel (communist)
+# 555036 - Party Quarrel (fascist)
+# 555037 - Party Quarrel (social_liberal)
+# 555038 - Party Quarrel (separatist)
+
+# 555040 - Party Splinter (conservative)
+# 555041 - Party Splinter (liberal)
+# 555042 - Party Splinter (reactionary)
+# 555043 - Party Splinter (anarcho_liberal)
+# 555044 - Party Splinter (socialist)
+# 555045 - Party Splinter (communist)
+# 555046 - Party Splinter (fascist)
+# 555047 - Party Splinter (social_liberal)
+# 555048 - Party Splinter (separatist)
+
+# 555050 - Party Alliance (conservative/reactionary)
+# 555051 - Party Alliance (conservative/liberal)
+# 555052 - Party Alliance (conservative/socialist)
+# 555053 - Party Alliance (liberal/anarcho_liberal)
+# 555054 - Party Alliance (liberal/socialist)
+# 555055 - Party Alliance (liberal/social_liberal)
+# 555056 - Party Alliance (socialist/communist)
+# 555057 - Party Alliance (socialist/social_liberal)
+# 555058 - Party Alliance (fascist/conservative)
+# 555059 - Party Alliance (fascist/reactionary)
+
+# 555060 - End of Quarral (Quarral)
+# 555061 - Healing Wounds (Splinter)
+# 555062 - Separate Ways (Alliance)
+
+# 555070 - improved_capitalist_and_worker_promotion_1
+# 555071 - improved_capitalist_and_worker_promotion_2
+# 555072 - improved_capitalist_and_worker_promotion_3
+# 555073 - improved_capitalist_and_worker_promotion_4
+# 555074 - improved_capitalist_and_worker_promotion_5
+
+# 555075 - The Age of Nationalism
+# 555076 - Vanguard Party of $COUNTRY$ - first
+# 555077 - Vanguard Party of $COUNTRY$ - rest
+# 555078 - The Great Experiment: Communism
+# 555079 - The Great Experiment: Fascism
+
+# 555080 - Rebel Armament 1860
+# 555081 - Rebel Armament 1880
+# 555082 - Rebel Armament 1900
+# 555083 - Rebel Armament 1920
+
+# 555090 - Colonial Maintenance
+# 555091 - Colonial Maintenance (Post Colonial)
+# 555092 - The Dusk of an Era
+
+# 555100 - Call for the South American Union
+# 555101 - USSA Inheritance
+# 555102 - The Future of South America
+
+# 555110 - Officer Training I
+# 555111 - Officer Training II
+# 555112 - Officer Training III
+# 555113 - Officer Training IV
+# 555114 - Officer Training V
+# 555115 - Officer Training VI
+# 555116 - Officer Training VII
+
+# 555120 - A Lost Nile Expedition
+# 555121 - Our Lost Nile Expedition
+# 555122 - The Fate of our Nile Expedition A
+# 555123 - The Fate of our Nile Expedition B
+# 555124 - The Fate of our Nile Expedition C
+# 555125 - The Fate of our Nile Expedition D
+
+# 555130 - A Lost North Pole Expedition
+# 555131 - Our Lost North Pole Expedition
+# 555132 - The Fate of our North Pole Expedition A
+# 555133 - The Fate of our North Pole Expedition B
+# 555134 - The Fate of our North Pole Expedition C
+# 555135 - The Fate of our North Pole Expedition D
+
+# 555140 - A Lost South Pole Expedition
+# 555141 - Our Lost South Pole Expedition
+# 555142 - The Fate of our South Pole Expedition A
+# 555143 - The Fate of our South Pole Expedition B
+# 555144 - The Fate of our South Pole Expedition C
+# 555145 - The Fate of our South Pole Expedition D
+
+# 555146 - Nile Expedition Returns
+# 555147 - North Pole Expedition Returns
+# 555148 - South Pole Expedition Returns
+
+# 555150 - French Birthrate Stabilizes
+
+# 555151 - The American Civil War (ACW start)
+# 555152 - The American Civil War (AACW start)
+# 555153 - The Taiping Rebellion (Taiping start)
+
+# 555160 - End of the Temperance League
+
+# - - - - - - - - - -
+
+
+
+# 555075 - The Age of Nationalism
+country_event = {
+	id = 555075
+	title = "EVTNAME555075"
+	desc = "EVTDESC555075"
+	picture = "nationalists"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {	exists = yes
+		invention = separatism
+		not = { has_country_flag = the_age_of_nationalism }
+		not = {	has_global_flag = the_age_of_nationalism_fired }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555075"
+		prestige = 25
+		set_global_flag = the_age_of_nationalism_fired
+		any_country = {
+			set_country_flag = the_age_of_nationalism
+		}
+	}
+}
+
+# 555076 - Vanguard Party of $COUNTRY$ - first
+country_event = {
+	id = 555076
+	title = "EVTNAME555076"
+	desc = "EVTDESC555076"
+	picture = "communist_riot"
+	major = yes
+	
+	trigger = {	exists = yes
+		not = { has_country_flag = vanguard_party_formed }
+		not = { has_global_flag = the_vanguard_party_has_formed }
+		invention = vangaurd_party
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 2.0
+			not = { literacy = 0.5 }
+		}
+		modifier = {
+			factor = 2.0
+			not = { literacy = 0.75 }
+		}
+		modifier = {
+			factor = 4.0
+			not = { invention = vangaurd_party }
+		}
+		modifier = {
+			factor = 0.25
+			invention = dogma_of_mass_action
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA555076"
+		prestige = 10
+		set_country_flag = vanguard_party_formed
+		set_global_flag = the_vanguard_party_has_formed
+	}
+}
+
+# 555077 - Vanguard Party of $COUNTRY$ - rest
+country_event = {
+	id = 555077
+	title = "EVTNAME555077"
+	desc = "EVTDESC555077"
+	picture = "communist_riot"
+	
+	trigger = {	exists = yes
+		not = { has_country_flag = vanguard_party_formed }
+		has_global_flag = the_vanguard_party_has_formed
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 2.0
+			not = { literacy = 0.5 }
+		}
+		modifier = {
+			factor = 2.0
+			not = { literacy = 0.75 }
+		}
+		modifier = {
+			factor = 4.0
+			not = { invention = vangaurd_party }
+		}
+		modifier = {
+			factor = 0.25
+			invention = dogma_of_mass_action
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA555077"
+		prestige = -5
+		set_country_flag = vanguard_party_formed
+	}
+}
+
+# 555078 - The Great Experiment: Communism
+country_event = {
+	id = 555078
+	title = "EVTNAME555078"
+	desc = "EVTDESC555078"
+	picture = "communist_crowd"
+	major = yes
+	
+	trigger = {	exists = yes
+		is_greater_power = yes
+		not = { has_global_flag = the_great_experiment_communist }
+		government = proletarian_dictatorship
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555078"
+		any_pop = {
+			militancy = -2
+			consciousness = -5
+		}
+		prestige = 10
+		set_country_flag = great_experiment_communist
+		set_global_flag = the_great_experiment_communist
+	}
+}
+
+# 555079 - The Great Experiment: Fascism
+country_event = {
+	id = 555079
+	title = "EVTNAME555079"
+	desc = "EVTDESC555079"
+	picture = "Fascist"
+	major = yes
+	
+	trigger = {	exists = yes
+		is_greater_power = yes
+		not = { has_global_flag = the_great_experiment_fascist }
+		government = fascist_dictatorship
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555079"
+		any_pop = {
+			militancy = -2
+			consciousness = -5
+		}
+		prestige = 10
+		set_country_flag = great_experiment_fascism
+		set_global_flag = the_great_experiment_fascist
+	}
+}
+
+# 555080 - Rebel Armament 1860
+country_event = {
+	id = 555080
+	title = "EVTNAME555080"
+	desc = "EVTDESC555080"
+	picture = "Rebellion"
+	major = yes
+	
+	trigger = {	exists = yes
+		year = 1860
+		not = { has_global_flag = rebel_armament_1860 }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555080"
+		set_global_flag = rebel_armament_1860
+		REB = {
+			activate_technology = post_napoleonic_thought 
+			activate_technology = flintlock_rifles 
+			activate_technology = bronze_muzzle_loaded_artillery 
+			activate_technology = military_staff_system 
+			activate_technology = army_command_principle 
+		}
+	}
+}
+
+# 555081 - Rebel Armament 1880
+country_event = {
+	id = 555081
+	title = "EVTNAME555081"
+	desc = "EVTDESC555081"
+	picture = "Rebellion"
+	major = yes
+	
+	trigger = {	exists = yes
+		year = 1880
+		has_global_flag = rebel_armament_1860
+		not = { has_global_flag = rebel_armament_1880 }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555081"
+		set_global_flag = rebel_armament_1880
+		REB = {
+			activate_technology = strategic_mobility 
+			activate_technology = muzzle_loaded_rifles 
+			activate_technology = iron_muzzle_loaded_artillery 
+			activate_technology = military_plans 
+			activate_technology = army_professionalism 
+		}
+	}
+}
+
+# 555082 - Rebel Armament 1900
+country_event = {
+	id = 555082
+	title = "EVTNAME555082"
+	desc = "EVTDESC555082"
+	picture = "Rebellion"
+	major = yes
+	
+	trigger = {	exists = yes
+		year = 1900
+		has_global_flag = rebel_armament_1880
+		not = { has_global_flag = rebel_armament_1900 }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555082"
+		set_global_flag = rebel_armament_1900
+		REB = {
+			activate_technology = point_defense_system 
+			activate_technology = breech_loaded_rifles 
+			activate_technology = iron_breech_loaded_artillery 
+			activate_technology = military_statistics 
+			activate_technology = army_decision_making 
+		}
+	}
+}
+
+# 555083 - Rebel Armament 1920
+country_event = {
+	id = 555083
+	title = "EVTNAME555083"
+	desc = "EVTDESC555083"
+	picture = "Rebellion"
+	major = yes
+	
+	trigger = {	exists = yes
+		year = 1920
+		has_global_flag = rebel_armament_1900
+		not = { has_global_flag = rebel_armament_1920 }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555083"
+		set_global_flag = rebel_armament_1920
+		REB = {
+			activate_technology = deep_defense_system 
+			activate_technology = bolt_action_rifles 
+			activate_technology = steel_breech_loaded_artillery 
+			activate_technology = military_logistics 
+			activate_technology = army_risk_management 
+		}
+	}
+}
+
+# 555090 - Colonial Maintenance
+country_event = {
+	id = 555090
+	title = "EVTNAME555090"
+	desc = "EVTDESC555090"
+	picture = "Rebellion"
+	
+	trigger = {	
+		exists = yes
+		not = {
+		has_country_modifier = colonial_maintenance
+		}
+		not = { has_global_flag = post_colonial_era_fired }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555090"
+		any_country = {
+			add_country_modifier = {
+				name = colonial_maintenance
+				duration = 365
+			}
+			any_country = {
+				any_owned = {
+					limit = {
+						is_colonial = yes
+					}
+					add_province_modifier = {
+						name = colonial_province
+						duration = -1
+					}
+				}
+			}
+			any_country = {
+				any_owned = {
+					limit = {
+						owner = { invention = colonial_exploitation }
+						is_colonial = yes
+					}
+					add_province_modifier = {
+						name = colonial_exploitation_tech_effect
+						duration = -1
+					}
+				}
+			}
+			any_country = {
+				any_owned = {
+					limit = {
+						is_colonial = no
+					}
+					remove_province_modifier = colonial_province
+					remove_province_modifier = colonial_exploitation_tech_effect
+				}
+			}
+		}
+	}
+}
+
+# 555091 - Colonial Maintenance (Post Colonial)
+country_event = {
+	id = 555091
+	title = "EVTNAME555090"
+	desc = "EVTDESC555090"
+	picture = "Rebellion"
+	
+	trigger = {	
+		exists = yes
+		not = {
+			has_country_modifier = colonial_maintenance
+		}
+		has_global_flag = post_colonial_era_fired
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555090"
+		any_country = {
+			add_country_modifier = {
+				name = colonial_maintenance
+				duration = 365
+			}
+			any_country = {
+				any_owned = {
+					remove_province_modifier = colonial_exploitation_tech_effect
+					remove_province_modifier = colonial_province
+					remove_province_modifier = colonial_dawn
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				NOT = { capital_scope = { continent = africa } }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					continent = africa
+				}
+				add_province_modifier = {
+					name = colonial_dawn
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				NOT = { capital_scope = { continent = asia } }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					continent = asia
+					not = {
+						is_core = RUS
+						owned_by = RUS
+					}
+				}
+				add_province_modifier = {
+					name = colonial_dawn
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				is_vassal = yes
+				capital_scope = { continent = africa }
+			}
+			any_owned = {
+				limit = {
+					continent = africa
+				}
+				add_province_modifier = {
+					name = colonial_dawn
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				is_vassal = yes
+				capital_scope = { continent = asia }
+			}
+			any_owned = {
+				limit = {
+					continent = asia
+				}
+				add_province_modifier = {
+					name = colonial_dawn
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					owner = { invention = colonial_exploitation }
+					is_colonial = yes
+				}
+				add_province_modifier = {
+					name = colonial_exploitation_tech_effect
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				ai = yes
+			}
+			add_country_modifier = {
+				name = ai_nation_boost_income
+				duration = -1
+			}
+		}
+		any_country = {
+			limit = {
+				not = { ai = yes }
+			}
+			remove_country_modifier = ai_nation_boost_income
+		}
+	}
+}
+
+# 555092 - The Dusk of an Era
+country_event = {
+	id = 555092
+	title = "EVTNAME555092"
+	desc = "EVTDESC555092"
+	picture = "nationalists"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {	
+		exists = yes
+		post_colonialism = 1
+		not = {	has_global_flag = post_colonial_era_fired }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555092"
+		prestige = 25
+		set_global_flag = post_colonial_era_fired
+		any_country = {
+			set_country_flag = post_colonial_era
+		}
+	}
+}
+
+# 555100 - Call for the South American Union
+country_event = {
+	id = 555100
+	title = "EVTNAME555100"
+	desc = "EVTDESC555100"
+	picture = "banquet"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA555100"
+		any_owned = {
+			limit = {
+				continent = south_america
+			}
+			add_core = USS
+			any_pop = {
+				consciousness = 2
+			}
+		}
+	}
+}
+
+# 555101 - USSA Inheritance
+country_event = {
+	id = 555101
+	title = "EVTNAME11101"
+	desc = "EVTDESC11101"
+	picture = "Celebration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA11101"
+		any_country = {
+			limit = {
+				OR = {
+					is_sphere_leader_of = THIS
+					is_our_vassal = THIS
+				}
+				NOT = { tag = FROM }
+			}
+			relation = {
+				who = FROM
+				value = -25
+			}
+			casus_belli = {
+				target = FROM
+				type = humiliate
+				months = 24
+			}
+			casus_belli = {
+				target = FROM
+				type = free_peoples
+				months = 24
+			}
+		}
+		FROM = { inherit = THIS }	
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				is_greater_power = yes
+				NOT = { has_country_flag = wants_to_unify }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					alliance_with = FROM
+					relation = { who = FROM value = 100 }
+				}
+			}
+			modifier = {
+				factor = 0.1
+				government = fascist_dictatorship
+				FROM = { government = proletarian_dictatorship }
+			}
+			modifier = {
+				factor = 0.1
+				government = proletarian_dictatorship
+				FROM = { government = fascist_dictatorship }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11101"
+		clr_country_flag = wants_to_unify
+		prestige = 1
+		leave_alliance = FROM
+		relation = {
+			who = FROM
+			value = -200
+		}
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+		}
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = 3
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_country_flag = wants_to_unify
+			}
+			modifier = {
+				factor = 0.75
+				is_secondary_power = no
+			}
+			modifier = {
+				factor = 0.75
+				part_of_sphere = no
+			}
+			modifier = {
+				factor = 1.5
+				truce_with = FROM
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					relation = { who = FROM value = 0 }
+				}
+			}
+			modifier = {
+				factor = 0.25
+				in_sphere = FROM
+			} 
+			modifier = {
+				factor = 0.25
+				government = fascist_dictatorship
+				FROM = { government = fascist_dictatorship }
+			}
+			modifier = {
+				factor = 0.25
+				government = proletarian_dictatorship
+				FROM = { government = proletarian_dictatorship }
+			}
+			modifier = {
+				factor = 0.25
+				OR = {
+					government = democracy
+					government = prussian_constitutionalism
+					government = hms_government
+				}
+				FROM = {
+					OR = {
+						government = democracy
+						government = prussian_constitutionalism
+						government = hms_government
+					}
+				}
+			}
+		}
+	}
+}
+
+# 555102 - The Future of South America
+country_event = {
+	id = 555102
+	title = "EVTNAME555102"
+	desc = "EVTDESC555102"
+	picture = "Celebration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA555102"
+		
+		any_pop = {
+			consciousness = 5
+		}
+		
+		government = democracy
+		political_reform = universal_voting
+		political_reform = population_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = secret_ballots
+		political_reform = all_trade_unions
+		political_reform = no_draft
+		political_reform = protected
+		political_reform = no_slavery
+		political_reform = proportional_representation
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+		election = yes
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.1
+				or = {
+					government = fascist_dictatorship
+					government = proletarian_dictatorship
+				}
+			}
+			modifier = {
+				factor = 0.5
+				or = {
+					government = presidential_dictatorship
+					government = bourgeois_dictatorship
+					government = absolute_monarchy
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB555102"
+		any_pop = {
+			limit = { 
+				is_primary_culture = no 
+			}
+			militancy = 6
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					government = democracy
+					government = prussian_constitutionalism
+					government = hms_government
+				}
+			}
+		}
+	}
+}
+
+
+# 555120 - A Lost Nile Expedition
+country_event = {
+
+	id = 555120
+	title = "EVTNAME555120"
+	desc = "EVTDESC555120"
+	picture = "Nile"
+
+	trigger = {	
+		exists = yes
+		has_global_flag = expedition_fail_nile_global
+		not = { has_country_flag = expedition_fail_nile }
+		OR = {
+			has_country_flag = YesGoToNileAgain
+			has_country_flag = YesGoToNile
+			has_country_flag = YesGoToNileThird
+			AND = { 
+				is_greater_power = yes
+				has_global_flag = NileDiscovered
+			}
+			AND = {
+				OR = {
+					owns = 2019
+					owns = 2023
+					owns = 2021
+					owns = 1846
+					owns = 1844
+					owns = 1832
+					owns = 1840
+					owns = 1831
+					owns = 1830
+					owns = 1828
+					owns = 1827
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 120
+	
+		modifier = {
+			factor = 0.25
+			has_country_flag = YesGoToNileAgain
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = YesGoToNile
+		}
+		modifier = {
+			factor = 0.8
+			year = 1880
+		}
+		modifier = {
+			factor = 0.8
+			year = 1900
+		}
+		modifier = {
+			factor = 0.5
+			year = 1920
+		}
+	}
+
+	option = {
+		name = "EVTOPTA555120"
+		prestige = 3
+		set_country_flag = expedition_finder
+		random_country = {
+			limit = { has_country_flag = expedition_fail_nile }
+			clr_country_flag = expedition_fail_nile
+			clr_global_flag = expedition_fail_nile_global
+			country_event = 555121 #Our Lost Nile Expedition
+			relation = {
+				who = THIS
+				value = 50
+			}
+		}
+	}
+}
+
+# 555121 - Our Lost Nile Expedition
+country_event = {
+
+	id = 555121
+	title = "EVTNAME555121"
+	desc = "EVTDESC555121"
+	picture = "Nile"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555121"
+		random_country = {
+			limit = { has_country_flag = expedition_finder }
+			relation = {
+				who = THIS
+				value = 50
+			}
+			clr_country_flag = expedition_finder
+		}
+		random_country = {
+			limit = { has_country_flag = expedition_fail_nile }
+			set_global_flag = expedition_fail_nile_global
+		}
+		random_list = {
+			20 = {
+				country_event = 555122
+			}
+			20 = {
+				country_event = 555123
+			}
+			20 = {
+				country_event = 555124
+			}
+			20 = {
+				country_event = 555125
+			}
+		}
+	}
+}
+
+# 555122 - The Fate of our Nile Expedition A #Accident
+country_event = {
+
+	id = 555122
+	title = "EVTNAME555122"
+	desc = "EVTDESC555122"
+	picture = "Nile"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555122"
+		years_of_research = 0.1
+	}
+}
+
+# 555123 - The Fate of our Nile Expedition B #Bandits
+country_event = {
+
+	id = 555123
+	title = "EVTNAME555123"
+	desc = "EVTDESC555123"
+	picture = "Nile"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555123"
+		years_of_research = 0.1
+	}
+}
+
+# 555124 - The Fate of our Nile Expedition C #Disease
+country_event = {
+
+	id = 555124
+	title = "EVTNAME555124"
+	desc = "EVTDESC555124"
+	picture = "Nile"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555124"
+		years_of_research = 0.1
+	}
+}
+
+# 555125 - The Fate of our Nile Expedition D #Lack of Supplies
+country_event = {
+
+	id = 555125
+	title = "EVTNAME555125"
+	desc = "EVTDESC555125"
+	picture = "Nile"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555125"
+		years_of_research = 0.1
+	}
+}
+
+# 555130 - A Lost North Pole Expedition
+country_event = {
+
+	id = 555130
+	title = "EVTNAME555130"
+	desc = "EVTDESC555130"
+	picture = "NorthPole2"
+
+	trigger = {	
+		exists = yes
+		has_global_flag = expedition_fail_north_global
+		not = { has_country_flag = expedition_fail_north }
+		OR = {
+			has_country_flag = YesGoToNorthPole
+			has_country_flag = YesGoToNorthPoleAgain
+			has_country_flag = YesGoToNorthPoleThird
+			AND = { 
+				is_greater_power = yes
+				has_global_flag = NorthPoleDiscovered
+			}
+			AND = {
+				OR = {
+					owns = 2636
+					owns = 45
+					owns = 2595
+					owns = 2631
+					owns = 2652
+					owns = 2590
+					owns = 3246
+					owns = 307
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 120
+	
+		modifier = {
+			factor = 0.25
+			has_country_flag = YesGoToNorthPoleAgain
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = YesGoToNorthPole
+		}
+		modifier = {
+			factor = 0.8
+			year = 1900
+		}
+		modifier = {
+			factor = 0.8
+			year = 1920
+		}
+		modifier = {
+			factor = 0.5
+			year = 1940
+		}
+	}
+
+	option = {
+		name = "EVTOPTA555130"
+		prestige = 5
+		set_country_flag = expedition_finder_north
+		random_country = {
+			limit = { has_country_flag = expedition_fail_north }
+			clr_country_flag = expedition_fail_north
+			clr_global_flag = expedition_fail_north_global
+			country_event = 555131
+			relation = {
+				who = THIS
+				value = 50
+			}
+		}
+	}
+}
+
+# 555131 - Our Lost North Pole Expedition
+country_event = {
+
+	id = 555131
+	title = "EVTNAME555131"
+	desc = "EVTDESC555131"
+	picture = "NorthPole2"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555131"
+		random_country = {
+			limit = { has_country_flag = expedition_finder_north }
+			relation = {
+				who = THIS
+				value = 50
+			}
+			clr_country_flag = expedition_finder_north
+		}
+		random_country = {
+			limit = { has_country_flag = expedition_fail_north }
+			set_global_flag = expedition_fail_north_global
+		}
+		random_list = {
+			20 = {
+				country_event = 555132
+			}
+			20 = {
+				country_event = 555133
+			}
+			20 = {
+				country_event = 555134
+			}
+			20 = {
+				country_event = 555135
+			}
+		}
+	}
+}
+
+# 555132 - The Fate of our North Pole Expedition A #Accident
+country_event = {
+
+	id = 555132
+	title = "EVTNAME555132"
+	desc = "EVTDESC555132"
+	picture = "NorthPole2"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555132"
+		prestige = 2
+		years_of_research = 0.1
+	}
+}
+
+# 555133 - The Fate of our North Pole Expedition B #Ship Stuck
+country_event = {
+
+	id = 555133
+	title = "EVTNAME555133"
+	desc = "EVTDESC555133"
+	picture = "NorthPole2"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555133"
+		prestige = 2
+		years_of_research = 0.1
+	}
+}
+
+# 555134 - The Fate of our North Pole Expedition C #Lack of Supplies
+country_event = {
+
+	id = 555134
+	title = "EVTNAME555134"
+	desc = "EVTDESC555134"
+	picture = "NorthPole2"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555134"
+		prestige = 2
+		years_of_research = 0.1
+	}
+}
+
+# 555135 - The Fate of our North Pole Expedition D #Lead Poisoning
+country_event = {
+
+	id = 555135
+	title = "EVTNAME555135"
+	desc = "EVTDESC555135"
+	picture = "NorthPole2"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555135"
+		prestige = 2
+		years_of_research = 0.1
+	}
+}
+
+# 555140 - A Lost South Pole Expedition
+country_event = {
+
+	id = 555140
+	title = "EVTNAME555140"
+	desc = "EVTDESC555140"
+	picture = "SouthPole2"
+
+	trigger = {	
+		exists = yes
+		has_global_flag = expedition_fail_south_global
+		not = { has_country_flag = expedition_fail_south }
+		OR = {
+			has_country_flag = YesGoToSouthPole
+			has_country_flag = YesGoToSouthPoleAgain
+			has_country_flag = YesGoToSouthPoleThird
+			AND = {
+				is_greater_power = yes
+				has_global_flag = SouthPoleDiscovered
+			}
+			AND = {
+				OR = {
+					owns = 2400
+					owns = 2335
+					owns = 2133
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 120
+	
+		modifier = {
+			factor = 0.25
+			has_country_flag = YesGoToSouthPoleAgain
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = YesGoToSouthPole
+		}
+		modifier = {
+			factor = 0.8
+			year = 1900
+		}
+		modifier = {
+			factor = 0.8
+			year = 1920
+		}
+		modifier = {
+			factor = 0.5
+			year = 1940
+		}
+	}
+
+	option = {
+		name = "EVTOPTA555140"
+		prestige = 5
+		set_country_flag = expedition_finder_south
+		random_country = {
+			limit = { has_country_flag = expedition_fail_south }
+			clr_country_flag = expedition_fail_south
+			clr_global_flag = expedition_fail_south_global
+			country_event = 555141
+			relation = {
+				who = THIS
+				value = 50
+			}
+		}
+	}
+}
+
+# 555141 - Our Lost South Pole Expedition
+country_event = {
+
+	id = 555141
+	title = "EVTNAME555141"
+	desc = "EVTDESC555141"
+	picture = "SouthPole2"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555141"
+		random_country = {
+			limit = { has_country_flag = expedition_finder_south }
+			relation = {
+				who = THIS
+				value = 50
+			}
+			clr_country_flag = expedition_finder_south
+		}
+		random_country = {
+			limit = { has_country_flag = expedition_fail_south }
+			set_global_flag = expedition_fail_south_global
+		}
+		random_list = {
+			20 = {
+				country_event = 555142
+			}
+			20 = {
+				country_event = 555143
+			}
+			20 = {
+				country_event = 555144
+			}
+			20 = {
+				country_event = 555145
+			}
+		}
+	}
+}
+
+# 555142 - The Fate of our South Pole Expedition A #Accident
+country_event = {
+
+	id = 555142
+	title = "EVTNAME555142"
+	desc = "EVTDESC555142"
+	picture = "SouthPole2"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555142"
+		prestige = 2
+		years_of_research = 0.1
+	}
+}
+
+# 555143 - The Fate of our South Pole Expedition B #Ship Sunk
+country_event = {
+
+	id = 555143
+	title = "EVTNAME555143"
+	desc = "EVTDESC555143"
+	picture = "SouthPole2"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555143"
+		prestige = 2
+		years_of_research = 0.1
+	}
+}
+
+# 555144 - The Fate of our South Pole Expedition C #Lack of Supplies
+country_event = {
+
+	id = 555144
+	title = "EVTNAME555144"
+	desc = "EVTDESC555144"
+	picture = "SouthPole2"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555144"
+		prestige = 2
+		years_of_research = 0.1
+	}
+}
+
+# 555145 - The Fate of our South Pole Expedition D #Personal Drama
+country_event = {
+
+	id = 555145
+	title = "EVTNAME555145"
+	desc = "EVTDESC555145"
+	picture = "SouthPole2"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA555145"
+		prestige = 2
+		years_of_research = 0.1
+	}
+}
+
+# 555146 - Nile Expedition Returns
+country_event = {
+
+	id = 555146
+	title = "EVTNAME555146"
+	desc = "EVTDESC555146"
+	picture = "Nile"
+
+	trigger = {	
+		exists = yes
+		or = {
+			has_country_flag = YesGoToNile
+			has_country_flag = YesGoToNileAgain
+			has_country_flag = YesGoToNileThird
+		}
+		has_global_flag = NileDiscovered
+		not = { has_country_flag = NoGoToNile }
+		not = { has_country_flag = has_discovered_the_nile }
+	}
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.4
+			year = 1872
+		}
+		modifier = {
+			factor = 0.7
+			year = 1874
+		}
+		modifier = {
+			factor = 0.9
+			year = 1876
+		}
+	}
+
+	option = {
+		name = "EVTOPTA555146"
+		prestige = 5
+		years_of_research = 0.1
+		clr_country_flag = YesGoToNile
+		clr_country_flag = YesGoToNileAgain
+		clr_country_flag = YesGoToNileThird
+	}
+}
+
+# 555147 - North Pole Expedition Returns
+country_event = {
+
+	id = 555147
+	title = "EVTNAME555147"
+	desc = "EVTDESC555147"
+	picture = "NorthPole3"
+
+	trigger = {	
+		exists = yes
+		or = {
+			has_country_flag = YesGoToNorthPole
+			has_country_flag = YesGoToNorthPoleAgain
+			has_country_flag = YesGoToNorthPoleThird
+		}
+		has_global_flag = NorthPoleDiscovered
+		not = { has_country_flag = NoGoToNorthPole }
+		not = { has_country_flag = has_discovered_the_north_pole }
+	}
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.4
+			year = 1872
+		}
+		modifier = {
+			factor = 0.7
+			year = 1874
+		}
+		modifier = {
+			factor = 0.9
+			year = 1876
+		}
+	}
+
+	option = {
+		name = "EVTOPTA555147"
+		prestige = 5
+		years_of_research = 0.1
+		clr_country_flag = YesGoToNorthPole
+		clr_country_flag = YesGoToNorthPoleAgain
+		clr_country_flag = YesGoToNorthPoleThird
+	}
+}
+# 555148 - South Pole Expedition Returns
+country_event = {
+
+	id = 555148
+	title = "EVTNAME555148"
+	desc = "EVTDESC555148"
+	picture = "NorthPole3"
+
+	trigger = {	
+		exists = yes
+		or = {
+			has_country_flag = YesGoToSouthPole
+			has_country_flag = YesGoToSouthPoleAgain
+			has_country_flag = YesGoToSouthPoleThird
+		}
+		has_global_flag = SouthPoleDiscovered
+		not = { has_country_flag = NoGoToSouthPole }
+		not = { has_country_flag = has_discovered_the_south_pole }
+	}
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.4
+			year = 1872
+		}
+		modifier = {
+			factor = 0.7
+			year = 1874
+		}
+		modifier = {
+			factor = 0.9
+			year = 1876
+		}
+	}
+
+	option = {
+		name = "EVTOPTA555148"
+		prestige = 5
+		years_of_research = 0.1
+		clr_country_flag = YesGoToSouthPole
+		clr_country_flag = YesGoToSouthPoleAgain
+		clr_country_flag = YesGoToSouthPoleThird
+	}
+}
+
+# 555151 - The American Civil War (ACW start)
+country_event = {
+
+	id = 555151
+	title = "EVTNAME555151"
+	desc = "EVTDESC555151"
+	picture = "senate_debate"
+	fire_only_once = yes
+	major = yes
+
+	trigger = {	
+		exists = yes
+		tag = USA
+		has_global_flag = ACW_preparations
+		not = { has_global_flag = american_civil_war_has_happened }
+		NOT = { has_country_modifier = no_more_war }
+		NOT = { has_country_modifier = neutrality }
+	}
+	
+	mean_time_to_happen =  {
+		days = 1
+	}
+	
+	immediately = {
+		USA = {
+			clr_country_modifier = no_more_war
+			clr_country_modifier = neutrality
+		}
+		CSA = {
+			clr_country_modifier = no_more_war
+			clr_country_modifier = neutrality
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA555151"
+		
+		USA = {
+			war = {
+				target = CSA
+				attacker_goal = {
+					casus_belli = civil_war
+				}
+				
+				defender_goal = {
+					casus_belli = status_quo
+				}
+			}
+		}
+		set_global_flag = american_civil_war_has_happened
+	}
+}
+
+# 555160 - End of the Temperance League
+country_event = {
+	id = 555160
+	title = "EVTNAME555160"
+	desc = "EVTDESC555160"
+	picture = "TemperanceLeague"
+	
+	trigger = {	
+		exists = yes
+		civilized = yes
+
+		has_country_modifier = temperance_league
+		not = { moralism = 5 }
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_everyday_needs = 0.7
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_everyday_needs = 0.6
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_everyday_needs = 0.5
+			}
+		}
+		modifier = {
+			factor = 0.5
+			not = { moralism = 2 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 2
+			}
+		}
+		modifier = {
+			factor = 1.1
+			NOT = {
+				average_consciousness = 5
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA555160"
+		remove_country_modifier = temperance_league
+	}
+	
+	option = {
+		name = "EVTOPTB555160"
+		prestige = -10
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			militancy = 1
+			consciousness = 2
+		}
+	}
+}

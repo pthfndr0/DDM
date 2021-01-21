@@ -1,0 +1,10 @@
+owner = BOL
+controller = BOL
+add_core = BOL
+trade_goods = cattle
+life_rating = 30
+terrain = lapaz
+1861.1.1 = {
+	owner = BOL
+	controller = BOL
+}

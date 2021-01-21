@@ -1,0 +1,9 @@
+#;;;;;;;;;;;;;x;;;
+will_receive_title;Request International Aid;;;;;;;;;;;;x;;;
+will_receive_desc;This will request money from other players in the game. Please do not spam click or otherwise exploit this decision and it's event chain.;;;;;;;;;;;;x;;;
+#will_not_receive_title;Disable Receiving Foreign Aid;;;;;;;;;;;;x;;;
+#will_not_receive_desc;This will prohibit other players from giving us aid. It can be reversed at any time.;;;;;;;;;;;;x;;;
+will_give_title;Enable Giving Foreign Aid;;;;;;;;;;;;x;;;
+will_give_desc;This will allow us to give foreign aid to other players. It must be activated before a player chooses to request it. It can be reversed at any time.;;;;;;;;;;;;x;;;
+will_not_give_title;Disable Giving Foreign Aid;;;;;;;;;;;;x;;;
+will_not_give_desc;This will prevent us from getting events when other players request foreign aid. It can be reversed at any time.;;;;;;;;;;;;x;;;

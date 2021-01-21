@@ -1,0 +1,144 @@
+leader = {
+   name = "Tewoderos Kasa"
+   type = land
+   date = 1836.1.1
+   background = school_of_offense
+   personality = bold 
+}
+
+leader = {
+   name = "Wolde Selassie"
+   type = land
+   date = 1836.1.1
+   background = sinner
+   personality = diligent
+}
+
+leader = {
+   name = "Sahle Selassie"
+   type = land
+   date = 1836.1.1
+   background = cursed_luck
+   personality = cautious 
+}
+
+army = {
+	name = "Army of the Negus of Begemder"
+	location = 1852
+	regiment = {
+		name = "1st Royal Guard"
+		type = hussar
+		home = 1852
+	}
+	regiment = {
+		name = "2nd Royal Guard"
+		type = hussar
+		home = 1852
+	}
+	regiment = {
+		name= "1st Galla Division"
+		type = irregular
+		home = 1852
+	}
+	regiment = {
+		name= "2nd Galla Division"
+		type = irregular
+		home = 1852
+	}
+	regiment = {
+		name= "3rd Galla Division"
+		type = irregular
+		home = 1852
+	}
+	regiment = {
+		name= "4th Galla Division"
+		type = irregular
+		home = 1852
+	}
+	regiment = {
+		name= "5th Galla Division"
+		type = irregular
+		home = 1852
+	}
+	regiment = {
+		name= "6th Galla Division"
+		type = irregular
+		home = 1852
+	}
+
+}
+
+army = {
+	name = "Army of the Ras of Jimma"
+	location = 1863
+	regiment = {
+		name = "1st Royal Guard"
+		type = hussar
+		home = 1862
+	}
+	regiment = {
+		name= "1st Wolla Division"
+		type = irregular
+		home = 1862
+	}
+	regiment = {
+		name= "2nd Wolla Division"
+		type = irregular
+		home = 1862
+	}
+	regiment = {
+		name= "3rd Wolla Division"
+		type = irregular
+		home = 1862
+	}
+
+}
+
+army = {
+	name = "Army of the Negus of Tigre"
+	location = 1853
+	regiment = {
+		name = "1st Royal Guard"
+		type = hussar
+		home = 1853
+	}
+	regiment = {
+		name = "2nd Royal Guard"
+		type = hussar
+		home = 1853
+	}
+	regiment = {
+		name= "1st Tigray Division"
+		type = irregular
+		home = 1853
+	}
+	regiment = {
+		name= "2nd Tigray Division"
+		type = irregular
+		home = 1853
+	}
+	regiment = {
+		name= "3rd Tigray Division"
+		type = irregular
+		home = 1853
+	}
+	regiment = {
+		name= "4th Tigray Division"
+		type = irregular
+		home = 1853
+	}
+	regiment = {
+		name= "5th Tigray Division"
+		type = irregular
+		home = 1853
+	}
+	regiment = {
+		name= "6th Tigray Division"
+		type = irregular
+		home = 1853
+	}
+
+}
+
+
+

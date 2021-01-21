@@ -1,0 +1,41 @@
+# USA-Liberia
+vassal = {
+	first = USA
+	second = LIB
+	start_date = 1822.1.1
+	end_date = 1847.7.26
+}
+
+# Russia-Finland
+vassal = {
+	first = RUS
+	second = FIN
+	start_date = 1809.3.29
+	end_date = 1917.12.6
+}
+
+# China/tibet.
+vassal = {
+	first = QNG
+	second = TIB
+	start_date = 1815.11.9
+	end_date = 1912.1.1
+}
+
+#China/Korea
+vassal = {
+	first = QNG
+	second = KOR
+	start_date = 1636.1.1
+	end_date = 1876.1.1
+}
+
+#China/Mongolia
+vassal = {
+	first = QNG
+	second = MGL
+	start_date = 1691.1.1
+	end_date = 1911.1.1
+}
+
+

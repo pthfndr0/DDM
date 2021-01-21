@@ -1,0 +1,36 @@
+ENG = {
+	value = -50
+}
+
+army = {
+
+	name = "Army of Yemen"
+
+	location = 1178
+
+	regiment = {
+
+		name= "1. Abdali"
+
+		type = infantry
+		
+	}
+
+
+	regiment = {
+
+		name= "2. Abdali"
+
+		type = cavalry
+	}
+	
+	regiment = {
+
+		name= "3. Abdali"
+
+		type = cavalry
+		
+	}
+
+}
+

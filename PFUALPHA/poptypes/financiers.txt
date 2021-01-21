@@ -1,0 +1,60 @@
+sprite = 14
+color = { 253 185 140 }
+strata = rich
+unemployment = yes
+
+rebel = {
+guard = 1
+}
+
+life_needs = {
+}
+
+everyday_needs = {
+}
+
+luxury_needs = {
+	rubber = 5000
+	tropical_wood = 5000
+	silk = 5000
+	dye = 5000
+	explosives = 5000
+	artillery = 5000
+	small_arms = 5000
+	ammunition = 5000
+	canned_food = 5000
+	opium = 5000
+	cotton = 5000
+	tea = 5000
+	coffee = 5000
+	tobacco = 5000
+	wool = 5000
+	sulphur = 5000
+	timber = 5000
+	lumber = 5000
+	coal = 5000
+	iron = 5000
+	clipper_convoy = 5000
+	steamer_convoy = 5000
+	cement = 5000
+	steel = 5000
+	bronze = 5000
+	machine_parts = 5000
+	grain = 5000
+	fruit = 5000
+	fish = 5000
+	cattle = 5000
+	boots = 5000
+	sugar = 5000
+	spices = 5000
+	cigars = 5000
+	fertilizer = 5000
+	copper = 5000
+	print = 5000
+	shares = 5000
+	pharmaceuticals = 5000
+	financial_services = 5000
+	liquor = 5000
+	wine = 5000
+}
+

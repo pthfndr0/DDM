@@ -1,0 +1,607 @@
+#################################################################################
+#																				#
+#             					Kiel Canal										#
+#																				#
+#################################################################################
+
+country_event = {
+	
+	id = 97205
+	title = "The Kiel Canal"
+	desc = "We have assumed control over the Kiel Canal."
+	news = yes
+	news_title = "EVTNAME97205_NEWS_TITLE"
+	news_desc_long = "EVTDESC97205_NEWS_LONG"
+	news_desc_medium = "EVTDESC97205_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97205_NEWS_SHORT"
+	picture = "Kiel"
+	
+	trigger = {	exists = yes
+		is_canal_enabled = 1
+		369 = {
+			owned_by = THIS
+			NOT = { has_province_modifier = kiel_canal }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Excellent."
+		369 = {
+			add_province_modifier = {
+				name = kiel_canal
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 97225
+	title = "Kiel Canal Completed!"
+	desc = "EVTDESC188718953"
+	news = yes
+	news_desc_long = "kiel_canal_NEWS_LONG"
+	news_desc_medium = "kiel_canal_NEWS_MEDIUM"
+	news_desc_short = "kiel_canal_NEWS_SHORT"
+	picture = "Kiel"
+	
+	trigger = {	
+	    OR = {
+		tag = GER
+		tag = NGF
+		}
+		has_country_modifier = building_kiel_canal
+	}
+		
+	mean_time_to_happen = {
+		months = 24		
+	}
+	
+	option = {
+		name = "Hurrah!"
+		prestige = 100
+		research_points = 300
+		enable_canal = 1
+		369 = { set_province_flag = kiel_canal }
+		set_country_flag = built_kiel
+		369 = { 
+			add_province_modifier = {
+				name = kiel_canal
+				duration = -1
+			}
+		}
+		clr_global_flag = building_kiel_canal_phase3
+		remove_country_modifier = building_kiel_canal
+	}
+}
+
+country_event = {
+
+	id = 97235
+	title = "Grüße aus Kiel"
+	desc = "EVTDESC188718955"
+	picture = "Kiel"
+	
+	fire_only_once = yes
+	
+	trigger = {	exists = yes
+		ai = no
+		NOT = {	has_country_flag = built_kiel }
+		is_canal_enabled = 1
+	}
+		
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Sufficient postage"	
+	}
+}
+
+country_event = {
+
+	id = 97240
+	title = "The Kiel Canal"
+	desc = "A nation has started construction on the Kiel Canal!"
+	picture = "Kiel"
+	
+	fire_only_once = yes
+	
+	trigger = {	exists = yes
+		ai = no
+		has_global_flag = kiel_canal_global
+		NOT = { has_country_modifier = building_kiel_canal }
+		NOT = {	has_country_flag = built_kiel }
+	}
+		
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Okay"	
+	}
+}
+
+#################################################################################
+#																				#
+#             					Suez Canal										#
+#																				#
+#################################################################################
+
+country_event = {
+	
+	id = 97255
+	title = "The Suez Canal"
+	desc = "We have assumed control over the Suez Canal."
+	news = yes
+	news_title = "EVTNAME97255_NEWS_TITLE"
+	news_desc_long = "EVTDESC97255_NEWS_LONG"
+	news_desc_medium = "EVTDESC97255_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97255_NEWS_SHORT"
+	picture = "Suez3"
+	
+	trigger = {	exists = yes
+		is_canal_enabled = 2
+		1755 = {
+			owned_by = THIS
+			NOT = { has_province_modifier = suez_canal }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Excellent."
+		1755 = {
+			add_province_modifier = {
+				name = suez_canal
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 97280
+	title = "Suez Canal Completed!"
+	desc = "Between Kantara and El-Ferdane. The first vessels through the canal."
+	news = yes
+	news_desc_long = "suez_canal_NEWS_LONG"
+	news_desc_medium = "suez_canal_NEWS_MEDIUM"
+	news_desc_short = "suez_canal_NEWS_SHORT"
+	picture = "Suez3"
+	
+	trigger = {	
+	has_country_modifier = building_suez_canal
+	}
+		
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			has_global_flag = berlin_conference
+		}
+		modifier = {
+			factor = 0.8
+			cheap_steel = 1
+		}
+		modifier = {
+			factor = 0.8
+			invention = nitroglycerin
+		}
+		modifier = {
+			factor = 0.8
+			empiricism = 1
+		}
+	}
+	
+	option = {
+		name = "Huzza!"
+		prestige = 200
+		research_points = 3000
+		1755 = { secede_province = THIS }
+		enable_canal = 2
+		1755 = { set_province_flag = suez_canal }
+		set_country_flag = built_suez
+		1755 = {
+			add_province_modifier = {
+				name = suez_canal
+				duration = -1
+			}
+		}
+		remove_country_modifier = building_suez_canal
+		random_country = {
+			limit = { has_country_modifier = suez_canal_treaty }
+			military_access = THIS
+		}
+	}
+}
+
+country_event = {
+	id = 97295
+	title = "Suez Canal Treaty"
+	desc = "EVTDESC185918696"
+	picture = "treaty"
+	
+	trigger = {	exists = yes
+		has_country_modifier = building_suez_canal
+		1755 = {
+			NOT = { owned_by = THIS }
+			owner = {
+				in_sphere = THIS
+				NOT = { has_country_modifier = suez_canal_treaty }
+			}
+		}
+	}
+		
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "Proceed"
+		treasury = -30000
+		random_country = {
+			limit = { owns = 1755 }
+			country_event = 97300
+		}
+	}
+}
+
+country_event = {
+	id = 97300
+	title = "Suez Canal Treaty"
+	desc = "EVTDESC185918697"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+		
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "I have a feeling we're getting ripped off..."
+		treasury = 30000
+		add_country_modifier = {
+			name = suez_canal_treaty
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+
+	id = 97315
+	title = "Greetings from Suez"
+	desc = "EVTDESC185918699"
+	picture = "Suez3"
+	
+	trigger = {	exists = yes
+		ai = no
+		is_canal_enabled = 2
+	}
+		
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Who came up with this?"	
+	}
+}
+
+country_event = {
+
+	id = 97325
+	title = "The Suez Canal"
+	desc = "A nation has started construction on the Suez Canal."
+	picture = "Suez3"
+	
+	trigger = {	exists = yes
+		ai = no
+		NOT = { has_country_modifier = building_suez_canal }
+		NOT = { has_country_flag = built_suez }
+		has_global_flag = suez_canal_global
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "We wish them good luck."	
+	}
+}
+
+#################################################################################
+#																				#
+#             					Panama Canal									#
+#																				#
+#################################################################################
+
+country_event = {
+	
+	id = 97355
+	title = "The Panama Canal"
+	desc = "We have assumed control over the Panama Canal."
+	news = yes
+	news_title = "EVTNAME97355_NEWS_TITLE"
+	news_desc_long = "EVTDESC97355_NEWS_LONG"
+	news_desc_medium = "EVTDESC97355_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97355_NEWS_SHORT"
+	picture = "Panama3"
+	
+	trigger = {	exists = yes
+		is_canal_enabled = 3
+		1723 = {
+			owned_by = THIS
+			NOT = { has_province_modifier = panama_canal }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Excellent."
+		1723 = {
+			add_province_modifier = {
+				name = panama_canal
+				duration = -1
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = 97380
+	title = "Panama Canal Completed!"
+	desc = "Opening of the Panama Canal in 1914. Steamer SS Ancon entering Pedro Miguel locks from Culebra Cut."
+	news = yes
+	news_desc_long = "panama_canal_NEWS_LONG"
+	news_desc_medium = "panama_canal_NEWS_MEDIUM"
+	news_desc_short = "panama_canal_NEWS_SHORT"
+	picture = "Panama3"
+	
+	trigger = {	
+		has_country_modifier = building_panama_canal
+		1723 = {
+			OR = {
+				owned_by = THIS
+				owner = { has_country_modifier = panama_canal_treaty }
+			}
+		}
+		NOT = {
+			is_canal_enabled = 3
+		}
+	}
+		
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.9
+			steel_railroad = 1
+		}
+		modifier = {
+			factor = 0.9
+			semi_automatization = 1
+		}
+		modifier = {
+			factor = 0.9
+			cheap_steel = 1
+		}
+		modifier = {
+			factor = 0.9
+			invention = nitroglycerin
+		}
+		modifier = {
+			factor = 0.9
+			empiricism = 1
+		}	
+	}
+	
+	option = {
+		name = "Huzzah!"
+		prestige = 300
+		research_points = 1200
+		1723 = { secede_province = THIS }
+		enable_canal = 3
+		2325 = { remove_province_modifier = gateway_to_harbor }
+		1723 = { set_province_flag = panama_canal } # canal sprite
+		1723 = {
+			add_province_modifier = {
+				name = panama_canal
+				duration = -1
+			}
+		}
+		set_country_flag = built_panama
+		remove_country_modifier = building_panama_canal
+		random_country = {
+			limit = { has_country_modifier = panama_canal_treaty }
+			military_access = THIS
+		}
+	}
+}
+
+country_event = {
+	id = 97385
+	title = "The Panama Canal Treaty"
+	desc = "EVTDESC19049144"
+	picture = "treaty"
+	
+	trigger = {	exists = yes
+		has_country_modifier = building_panama_canal
+		1723 = {
+			NOT = { owned_by = THIS }
+			owner = {
+				NOT = { has_country_modifier = panama_canal_treaty }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "Proceed with the negotiations."
+		random_country = {
+			limit = {
+				owns = 1723
+			}
+			country_event = 97390
+		}
+	}
+}
+
+country_event = {
+	id = 97390
+	title = "The Panama Canal Treaty"
+	desc = "EVTDESC9049145"
+	picture = "treaty"
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sign the treaty."
+		treasury = 30000
+		prestige = -10
+		FROM = { country_event = 97391 }
+		add_country_modifier = {
+			name = panama_canal_treaty
+			duration = -1
+		}
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = 3
+		}
+	}
+
+}
+
+country_event = {
+	id = 97391
+	title = "Hay–Bunau-Varilla Treaty"
+	desc = "$FROMCOUNTRY$ has signed our proposed treaty. Construction on the canal may begin!"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		treasury = -30000
+	}
+}	
+	
+country_event = {
+	id = 97394
+	title = "Hay–Bunau-Varilla Treaty"
+	desc = "EVTDESC190419145"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "Thank the Yank!"
+		treasury = 30000
+		add_country_modifier = {
+			name = panama_canal_treaty
+			duration = -1
+		}
+		FROM = { country_event = 97391 }
+	}
+}
+
+country_event = {
+
+	id = 97400
+	title = "Panama Canal Treaty Cancelled"
+	desc = "With our loss of the isthmus the canal treaty has no meaning."
+	picture = "treaty"
+	
+	trigger = {	exists = yes
+		has_country_modifier = panama_canal_treaty
+		NOT = { owns = 1723 }
+		NOT = { is_canal_enabled = 3 }
+	}
+		
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "So be it."	
+		remove_country_modifier = panama_canal_treaty
+	}
+}
+
+country_event = {
+
+	id = 97405
+	title = "Greetings from the Panama Canal"
+	desc = "EVTDESC190419147"
+	news = yes
+	news_title = "EVTNAME97405_NEWS_TITLE"
+	news_desc_long = "EVTDESC97405_NEWS_LONG"
+	news_desc_medium = "EVTDESC97405_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97405_NEWS_SHORT"
+	picture = "Panama3"
+	
+	trigger = {	exists = yes
+		ai = no
+		is_canal_enabled = 3
+	}
+		
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Insufficient postage"	
+		treasury = -1
+	}
+}
+
+country_event = {
+
+	id = 97450
+	
+	trigger = {	
+		ai = no
+		NOT = { has_country_flag = built_panama }
+		has_global_flag = panama_canal_global
+		NOT = { has_country_modifier = building_panama_canal }
+	}
+		
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	title = "The Panama Canal"
+	desc = "A nation has started construction on the Panama Canal."
+	picture = "Panama3"
+
+	option = {
+		name = "We wish them the best of luck."	
+	}
+}

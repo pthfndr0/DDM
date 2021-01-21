@@ -1,0 +1,12 @@
+owner = ENG
+controller = ENG
+colonial = 2
+add_core = CAN
+trade_goods = fruit
+life_rating = 35
+terrain = conifer_forest_mountains
+1861.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 2
+}
