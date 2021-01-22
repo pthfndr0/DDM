@@ -16124,31 +16124,7 @@ appoint_camillo_cavour = {
 			#######Denmark#######
 			DEN_372 = { add_province_modifier = { name = small_baby_boom duration = 2920 } }
 			DEN_367 = { add_province_modifier = { name = small_baby_boom duration = 2920 } }
-			####Germany########
-			PRU_570 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			PRU_575 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			PRU_578 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			HES_2560 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			PRU_581 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			SAX_558 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			PRU_554 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			PRU_553 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			PRU_549 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			PRU_544 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			HAN_540 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			HAN_534 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			HAN_528 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			HOL_369 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			SCH_370 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			###Low Germany########
-			WUR_589 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			BAD_586 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			BAV_595 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			BAV_599 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			###Austria########
-			AUS_619 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			AUS_612 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
-			AUS_613 = { add_province_modifier = { name = small_baby_boom duration = 3000 } }
+
 		
 		EGY = {
 			any_owned = {
